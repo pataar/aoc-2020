@@ -3,7 +3,7 @@ name: test
 on:
   push:
     paths:
-      - '**/*/.js'
+      - './**/*.js'
 
 jobs:
   test:
