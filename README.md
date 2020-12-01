@@ -7,10 +7,13 @@ These are my solutions to the Advent of Code 2020 puzzles.
 
 ## Running
 
-To run the first puzzle of day one for example:
+To run the puzzles:
 
 ```sh
-node 1/1
+$ node 1/1 # Day 1 puzzle 1
+$ node 1/2 # Day 1 puzzle 1
+$ node 2/1 # Day 2 puzzle 1
+$ node 2/2 # Day 2 puzzle 2
 ```
 
 No package manager installations needed.
