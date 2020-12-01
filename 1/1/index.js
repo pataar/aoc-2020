@@ -6,11 +6,11 @@ const a = fs
 	.map(i => Number(i));
 
 for (let i = 0; i < a.length; i++) {
-	const k = a[i];
-	for (let j = 0; j < a.length; j++) {
-		const d = a[j];
-		if (d + k === 2020) {
-			console.log(d * k);
+	for (let n = 0; n < a.length; n++) {
+		const a = a[i];
+		const c = a[n];
+		if (a + c === 2020) {
+			console.log(a * c);
 			process.exit(0);
 		}
 	}
