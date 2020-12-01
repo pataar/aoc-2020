@@ -3,10 +3,11 @@
 These are my solutions to the Advent of Code 2020 puzzles.
 
 ## Prerequisites:
-
 - Node ^12.0
 
-To run the first puzzle of day one for example, you can enter this:
+## Running
+
+To run the first puzzle of day one for example:
 
 ```sh
 node 1/1
