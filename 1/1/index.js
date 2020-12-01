@@ -1,19 +1,20 @@
-const fs = require("fs");
-const a = fs
-	.readFileSync(`${__dirname}/../input`)
-	.toString()
-	.split("\n")
-	.map(i => Number(i));
+module.exports = () => {
+	const fs = require("fs");
+	const input = fs
+		.readFileSync(`${__dirname}/../input`)
+		.toString()
+		.split("\n")
+		.map(i => Number(i));
 
-for (let i = 0; i < a.length; i++) {
-	for (let n = 0; n < a.length; n++) {
-		const a = a[i];
-		const c = a[n];
-		if (a + c === 2020) {
-			console.log(a * c);
-			process.exit(0);
+	for (let i = 0; i < input.length; i++) {
+		for (let n = 0; n < input.length; n++) {
+			const a = input[i];
+			const c = input[n];
+			if (a + c === 2020) {
+				return a * c;
+			}
 		}
 	}
-}
+};
 
-process.exit(1);
+console.log(module.exports());
