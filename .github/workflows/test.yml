@@ -1,9 +1,6 @@
 name: test
 
-on:
-  push:
-    paths:
-      - './**/*.js'
+on: [push]
 
 jobs:
   test:
