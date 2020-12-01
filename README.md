@@ -1,4 +1,4 @@
-# Advent of Code 2020
+# Advent of Code 2020 ![test](https://github.com/pataar/aoc-2020/workflows/test/badge.svg)
 
 These are my solutions to the Advent of Code 2020 puzzles.
 
