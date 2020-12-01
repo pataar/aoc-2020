@@ -1,0 +1,40 @@
+{
+	"env": {
+		"node": true
+	},
+	"extends": ["eslint:recommended", "plugin:prettier/recommended"],
+	"parserOptions": {
+		"ecmaVersion": 9,
+		"sourceType": "module"
+	},
+	"rules": {
+		"array-callback-return": "error",
+		"arrow-body-style": ["error", "as-needed"],
+		"arrow-parens": ["error", "as-needed"],
+		"arrow-spacing": "error",
+		"dot-notation": "error",
+		"eqeqeq": ["error", "always", { "null": "ignore" }],
+		"no-array-constructor": "error",
+		"no-duplicate-imports": "error",
+		"no-iterator": "error",
+		"no-loop-func": "error",
+		"no-new-func": "error",
+		"no-new-object": "error",
+		"no-new-wrappers": "error",
+		"no-prototype-builtins": 0,
+		"no-underscore-dangle": "error",
+		"no-unneeded-ternary": "error",
+		"no-useless-concat": "error",
+		"no-useless-constructor": "error",
+		"no-var": "error",
+		"object-shorthand": "error",
+		"prefer-arrow-callback": "error",
+		"prefer-const": "error",
+		"prefer-destructuring": "error",
+		"prefer-rest-params": "error",
+		"prefer-template": "error",
+		"quote-props": ["error", "as-needed"],
+		"spaced-comment": "error",
+		"require-atomic-updates": 0
+	}
+}
