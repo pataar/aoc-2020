@@ -1,10 +1,6 @@
 module.exports = () => {
 	const fs = require("fs");
-	const input = fs
-		.readFileSync(`${__dirname}/../input`)
-		.toString()
-		.split("\n")
-		.map(i => Number(i));
+	const input = fs.readFileSync(`${__dirname}/../input`).toString().split("\n").map(Number);
 
 	for (let i = 0; i < input.length; i++) {
 		for (let n = 0; n < input.length; n++) {

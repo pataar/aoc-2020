@@ -1,9 +1,5 @@
 const fs = require("fs");
-const input = fs
-	.readFileSync(`${__dirname}/../input`)
-	.toString()
-	.split("\n")
-	.map(i => Number(i));
+const input = fs.readFileSync(`${__dirname}/../input`).toString().split("\n").map(Number);
 
 for (let i = 0; i < input.length; i++) {
 	for (let j = 0; j < input.length; j++) {
