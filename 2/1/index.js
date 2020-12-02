@@ -13,13 +13,7 @@ module.exports = () => {
 	const fs = require("fs");
 	const input = fs.readFileSync(`${__dirname}/../input`).toString().split("\n");
 
-	let count = 0;
-	for (let i = 0; i < input.length; i++) {
-		let entry = input[i];
-		count += validatePassword(entry) ? 1 : 0;
-	}
-
-	return count;
+	return input.reduce((total, entry) => total + Number(validatePassword(entry)), 0);
 };
 
 if (require.main === module) {
