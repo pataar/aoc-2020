@@ -1,5 +1,6 @@
 const validatePassword = passwordEntry => {
-	// 1-3 a: min a 1 max a 3
+	// 7-10 q: kqhcqqqqqqqqn
+	// min 7x 'q' && max 10x 'q'
 	let [range, char, password] = passwordEntry.split(" ");
 	const [min, max] = range.split("-");
 	char = char.replace(":", "");
@@ -12,7 +13,7 @@ const validatePassword = passwordEntry => {
 module.exports = () => {
 	const fs = require("fs");
 	const input = fs.readFileSync(`${__dirname}/../input`).toString().split("\n");
-
+	// Count the number of correct passwords using reduce
 	return input.reduce((total, entry) => total + Number(validatePassword(entry)), 0);
 };
 
