@@ -16,3 +16,5 @@ generateTest(2, 1, 560);
 generateTest(2, 2, 303);
 generateTest(3, 1, 292);
 generateTest(3, 2, 9354744432);
+generateTest(4, 1, 216);
+generateTest(4, 2, 150);
